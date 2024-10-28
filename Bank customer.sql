@@ -1,6 +1,8 @@
+#Customer Insights Analysis: Decoding Retention and Engagement
+
 SELECT * FROM bankcustomer.bank_churn;
 
-# questions Easy:
+# questions 
 
 # Retrieve all customers' surnames and their corresponding estimated salaries ordered by salary highest to lowest.
 
