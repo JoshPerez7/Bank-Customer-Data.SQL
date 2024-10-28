@@ -1,16 +1,16 @@
-#Customer Insights Analysis: Decoding Retention and Engagement
+# Customer Insights Analysis: Decoding Retention and Engagement
 
 SELECT * FROM bankcustomer.bank_churn;
 
 # questions 
 
-# Retrieve all customers' surnames and their corresponding estimated salaries ordered by salary highest to lowest.
+# Retrieve all customers surnames and their corresponding estimated salaries ordered by salary highest to lowest.
 
 SELECT Surname, EstimatedSalary
 FROM bankcustomer.bank_churn
 ORDER BY EstimatedSalary DESC;
 
-# Find the number of active members (IsActiveMember).
+Find the number of active members (IsActiveMember).
 
 SELECT COUNT(CustomerId) AS 'Total Active Members'
 FROM bankcustomer.bank_churn
