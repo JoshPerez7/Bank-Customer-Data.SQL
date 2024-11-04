@@ -1,10 +1,6 @@
-# Customer Insights Analysis: Decoding Retention and Engagement
-
-# questions 
-
-# List all customers Id and surname from "Geography" = "France" 
-# who have more than one product (NumOfProducts > 1) 
-# sort by last name a to z.
+-- List all customers Id and surname from "Geography" = "France" 
+-- who have more than one product (NumOfProducts > 1) 
+-- sort by last name a to z.
 
 SELECT CustomerId, Surname
 FROM bankcustomer.bank_churn
