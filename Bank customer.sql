@@ -1,27 +1,18 @@
--- List all customers Id and surname from "Geography" = "France" 
--- who have more than one product (NumOfProducts > 1) 
--- sort by last name a to z.
+-- 1. Identify customers from France who hold multiple products.
 
 SELECT CustomerId, Surname
 FROM bankcustomer.bank_churn
 WHERE Geography = 'France' and NumOfProducts > 1
 ORDER BY Surname;
 
-# Calculate the total balance for each geography 
-# and display the geography with the highest total balance
-# at the top.
+-- 2. Determine the geographic regions with the highest total account balances.
 
 SELECT Geography, SUM(Balance) AS 'Total Balance'
 FROM bankcustomer.bank_churn
 GROUP BY Geography
 ORDER BY SUM(Balance) DESC;
 
-# medium
-
-# How does customer tenure (Tenure) impact the 
-# likelihood of having a credit card (HasCrCard),
-# and what are the trends observed in different
-# geographic locations?  find percentage to total num of customers
+-- 3. Investigate how customer tenure influences the likelihood of owning a credit card across different geographies.
 
 SELECT Geography, Tenure,
     100 * SUM(CASE WHEN HasCrCard = 1 THEN 1 ELSE 0 END) / COUNT(customerid) AS 'PercentageCreditCardHolders'
@@ -29,7 +20,7 @@ FROM bankcustomer.bank_churn
 GROUP BY Geography, Tenure
 ORDER BY Geography, Tenure;
 
-# To what extent does the number of products a customer holds (NumOfProducts) correlate with their credit score (CreditScore), and how does this relationship vary by age group?
+-- 4. Explore the correlation between the number of products held and credit scores, segmented by age groups.
 
 SELECT 
 	CASE
@@ -48,7 +39,7 @@ FROM bankcustomer.bank_churn
 Group by AgeGroup
 ORDER BY AgeGroup;
 
-# How does being an active member (IsActiveMember) affect the balance a customer maintains, and do these trends differ between genders?
+-- 5. Assess how being an active member impacts account balance and how this varies by gender.
 
 SELECT
 	Gender,
@@ -61,8 +52,7 @@ FROM bankcustomer.bank_churn
 GROUP BY Gender, MemberType
 ORDER BY Gender;
 
-# What is the relationship between the estimated salary (EstimatedSalary) and the number of products held
-# (NumOfProducts), and does this vary with the tenure of the customer?
+-- 6. Examine the relationship between estimated salaries and the number of products held, considering the impact of customer tenure.
 
 SELECT 
     CASE 
