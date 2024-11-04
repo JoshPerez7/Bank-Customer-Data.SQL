@@ -34,7 +34,7 @@ The dataset contains the following columns:
 
 ## Objectives
 
-1. Identify customers from specific geographies who hold multiple products and analyze their trends.
+1. Identify customers from France who hold multiple products.
 
 2. Determine the geographic regions with the highest total account balances.
 
