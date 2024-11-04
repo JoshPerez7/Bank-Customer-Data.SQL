@@ -1,27 +1,6 @@
 # Customer Insights Analysis: Decoding Retention and Engagement
 
-SELECT * FROM bankcustomer.bank_churn;
-
 # questions 
-
-# Retrieve all customers surnames and their corresponding estimated salaries ordered by salary highest to lowest.
-
-SELECT Surname, EstimatedSalary
-FROM bankcustomer.bank_churn
-ORDER BY EstimatedSalary DESC;
-
-Find the number of active members (IsActiveMember).
-
-SELECT COUNT(CustomerId) AS 'Total Active Members'
-FROM bankcustomer.bank_churn
-WHERE IsActiveMember = 1;
-
-# Identify the average credit score of customers who 
-# have exited (Exited = 1).
-
-SELECT AVG(CreditScore) AS 'Average Credit Score'
-FROM bankcustomer.bank_churn
-WHERE Exited = 1;
 
 # List all customers Id and surname from "Geography" = "France" 
 # who have more than one product (NumOfProducts > 1) 
@@ -40,12 +19,6 @@ SELECT Geography, SUM(Balance) AS 'Total Balance'
 FROM bankcustomer.bank_churn
 GROUP BY Geography
 ORDER BY SUM(Balance) DESC;
-
-# Determine the average age of customers who have a credit card (HasCrCard = 1) and are active members (IsActiveMember = 1).
-
-SELECT avg(age) AS 'Average Age'
-FROM bankcustomer.bank_churn
-WHERE HasCrCard = 1 and IsActiveMember = 1;
 
 # medium
 
@@ -83,7 +56,7 @@ ORDER BY AgeGroup;
 
 SELECT
 	Gender,
-    CASE 
+	CASE 
 		WHEN IsActiveMember = 1 THEN 'ActiveMember'
 		WHEN IsActiveMember = 0 THEN 'NotActiveMember'
 	END AS MemberType,
@@ -91,7 +64,6 @@ SELECT
 FROM bankcustomer.bank_churn
 GROUP BY Gender, MemberType
 ORDER BY Gender;
-
 
 # What is the relationship between the estimated salary (EstimatedSalary) and the number of products held
 # (NumOfProducts), and does this vary with the tenure of the customer?
