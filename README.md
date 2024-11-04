@@ -34,8 +34,16 @@ The dataset contains the following columns:
 
 ## Objectives
 
-1. Understand Customer Demographics: Analyze the geographical and gender distribution of customers.
+1. Identify customers from specific geographies who hold multiple products and analyze their trends.
 
-2. Analyze Customer Behavior: Investigate the relationship between customer tenure, account balance, and product holdings.
+2. Determine the geographic regions with the highest total account balances.
 
-3. Identify Trends and Correlations: Examine how various factors such as credit score, age, and salary relate to customer retention and activity.
+3. Investigate how customer tenure influences the likelihood of owning a credit card across different geographies.
+
+4. Explore the correlation between the number of products held and credit scores, segmented by age groups.
+
+5. Assess how being an active member impacts account balance and how this varies by gender.
+
+6. Examine the relationship between estimated salaries and the number of products held, considering the impact of customer tenure.
+
+These analyses provide valuable insights into customer dynamics, helping to inform strategic decisions and improve customer engagement and retention.
