@@ -47,3 +47,35 @@ The dataset contains the following columns:
 6. Examine the relationship between estimated salaries and the number of products held, considering the impact of customer tenure.
 
 These analyses provide valuable insights into customer dynamics, helping to inform strategic decisions and improve customer engagement and retention.
+
+## Results and Insights
+
+1. This query identified customers in France who hold more than one product. These customers are potentially more engaged with the bank's offerings, making them ideal candidates for targeted marketing campaigns and personalized service enhancements.
+
+2. The results showed which geographic regions have the highest total account balances. This information is valuable for strategic resource allocation and targeted investment in regions with higher financial activity.
+
+3. This analysis revealed how customer tenure influences the likelihood of owning a credit card across different geographies. Understanding these trends helps the bank design tenure-specific incentives and credit card promotions.
+
+4. The query demonstrated the correlation between the number of products held and credit scores, segmented by age groups. These insights are useful for developing age-specific product offerings and credit policies.
+
+5. This analysis showed that active membership status impacts account balances differently across genders. The bank can leverage this information to tailor engagement programs that increase account activity among different gender groups.
+
+6. The results highlighted how estimated salaries correlate with the number of products held by customers, taking their tenure into account. These findings help in designing salary-based product bundles and tenure-specific promotions.
+
+## Conclusion
+
+This SQL project provided valuable insights into customer behavior, financial metrics, and account activity. By analyzing different aspects of the bank customer data, we can:
+
+- Tailor marketing campaigns and service enhancements for engaged customers.
+
+- Allocate resources strategically based on geographical financial activity.
+
+- Design tenure-specific incentives and promotions for credit card ownership.
+
+- Develop age-specific product offerings and credit policies.
+
+- Tailor engagement programs based on gender-specific account balance trends.
+
+- Create salary-based product bundles and tenure-specific promotions.
+
+These insights help the bank make data-driven decisions to improve customer engagement, retention, and financial performance.
