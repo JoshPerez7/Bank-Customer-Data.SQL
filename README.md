@@ -1,4 +1,4 @@
-Bank Customer Data Analysis
+### Bank Customer Data Analysis
 Project Overview
 This project focuses on analyzing bank customer data to gain insights into customer behavior, account activity, and financial metrics. Using SQL, we performed various queries to explore trends and correlations within the dataset.
 
